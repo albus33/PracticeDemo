@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.handmark.pulltorefresh.samples"
+        minSdkVersion 16
+        targetSdkVersion 25
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            android.applicationVariants.all
+                    { variant ->
+                        variant.outputs.each { output ->
+                            output.outputFile = new File(rootProject.ext.outputFilePath,
+                                    project.archivesBaseName + "-" + project.versionName + ".apk");
+                        }
+                    }
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile project(':pullToRefreshLibrary')
+//    compile project(':pullToRefreshListFragment')
+//    compile project(':pullToRefreshViewPager')
+    compile 'com.android.support:support-v4:25.+'
+}

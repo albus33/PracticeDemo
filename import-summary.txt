@@ -1,0 +1,102 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .idea\
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\gradle.xml
+* .idea\misc.xml
+* .idea\workspace.xml
+* gradle\
+* gradle\wrapper\
+* gradle\wrapper\gradle-wrapper.jar
+* gradle\wrapper\gradle-wrapper.properties
+* mashangchiNewKey
+* msc
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:23.4.0
+gson-1.7.1.jar => com.google.code.gson:gson:1.7.1
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-1.7.1.jar => version 1.7.1 in com.google.code.gson:gson:1.7.1
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => MSC\src\main\AndroidManifest.xml
+* assets\ => MSC\src\main\assets\
+* libs\AMap_2DMap_V2.8.1_20160202.jar => MSC\libs\AMap_2DMap_V2.8.1_20160202.jar
+* libs\AMap_Location_v2.3.0_20160112.jar => MSC\libs\AMap_Location_v2.3.0_20160112.jar
+* libs\AMap_Search_V3.2.1_20160308.jar.jar => MSC\libs\AMap_Search_V3.2.1_20160308.jar.jar
+* libs\core-3.3.0.jar => MSC\libs\core-3.3.0.jar
+* libs\jpush-android-2.1.5.jar => MSC\libs\jpush-android-2.1.5.jar
+* libs\MobCommons-2016.0406.1915.jar => MSC\libs\MobCommons-2016.0406.1915.jar
+* libs\MobTools-2016.0406.1915.jar => MSC\libs\MobTools-2016.0406.1915.jar
+* libs\nineoldandroidslibrary.jar => MSC\libs\nineoldandroidslibrary.jar
+* libs\okhttp-2.7.5.jar => MSC\libs\okhttp-2.7.5.jar
+* libs\okio-1.7.0.jar => MSC\libs\okio-1.7.0.jar
+* libs\picasso-2.5.2.jar => MSC\libs\picasso-2.5.2.jar
+* libs\ShareSDK-Core-2.7.1.jar => MSC\libs\ShareSDK-Core-2.7.1.jar
+* libs\ShareSDK-ShortMessage-2.4.1.jar => MSC\libs\ShareSDK-ShortMessage-2.4.1.jar
+* libs\ShareSDK-Wechat-2.7.1.jar => MSC\libs\ShareSDK-Wechat-2.7.1.jar
+* libs\ShareSDK-Wechat-Core-2.7.1.jar => MSC\libs\ShareSDK-Wechat-Core-2.7.1.jar
+* libs\ShareSDK-Wechat-Moments-2.7.1.jar => MSC\libs\ShareSDK-Wechat-Moments-2.7.1.jar
+* libs\umeng-analytics-v6.0.1.jar => MSC\libs\umeng-analytics-v6.0.1.jar
+* libs\utdid4all-1.0.4.jar => MSC\libs\utdid4all-1.0.4.jar
+* libs\xUtils-2.6.14.jar => MSC\libs\xUtils-2.6.14.jar
+* res\ => MSC\src\main\res\
+* src\ => MSC\src\main\java\
+* src\.define => MSC\src\main\resources\.define
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

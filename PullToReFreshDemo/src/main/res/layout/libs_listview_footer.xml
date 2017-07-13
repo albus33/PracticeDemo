@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/libs_listview_footer_content"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/libs_listview_footer_progressbar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:indeterminateDrawable="@drawable/libs_loading_progress"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/libs_listview_footer_hint_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#C2C2C2"
+            android:gravity="center"
+            />
+        <!--android:text="@string/libs_listview_footer_hint_normal"-->
+    </LinearLayout>
+
+</FrameLayout>

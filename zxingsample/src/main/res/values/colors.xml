@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <!-- Android standard ICS color -->
+    <color name="result_text">#ff000000</color>
+    <color name="scan_corner">#3F96E8</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#cb000000</color>
+    <color name="viewfinder_frame">#ff4EEE94</color>
+    <!-- #ff0000ff -->
+    <color name="str_unclick">#b2b2b2</color>
+    <color name="time_hint">#909090</color>
+    <color name="green">#0c9901</color>
+    <color name="backgroud">#ffffffff</color>
+    <color name="title_tv_color">#ffffffff</color>
+    <color name="rule_e1">#e1e1e1</color>
+    <color name="getmsg">#52B3FF</color>
+    <color name="yellow">#FEFAE2</color>
+    <color name="blue">#3090E6</color>
+    <color name="btn_exit">#FF0066</color>
+    <color name="text_hint">#A1A1A1</color>
+    <color name="edt_hint">#C4C4C4</color>
+    <color name="title_bg">#FFFFFF</color>
+    <color name="listview_header_bg">#F5F5F5</color>
+    <color name="listview_text_color">#9A9A9A</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent50">#50000000</color>
+    <color name="back_f0">#f0f0f0</color>
+    <color name="result_view">#b0000000</color>
+
+    <!-- 城市列表 -->
+    <color name="colorPrimary">#F3F3F3</color>
+    <color name="colorPrimaryDark">#F3F3F3</color>
+    <color name="colorAccent">#F3F3F3</color>
+    <color name="divider">#d9d9d9</color>
+    <color name="shadow">#AAEBEBEB</color>
+    <color name="common_bg">#FAFAFA</color>
+    <color name="content_bg">#F3F3F3</color>
+    <color name="gray">#8c8c8c</color>
+    <color name="cbcbcb">#cbcbcb</color>
+    <color name="gray_deep">#5c5c5c</color>
+    <color name="alpha_gray">#CC646464</color>
+    <color name="theme_gray">#646464</color>
+    <color name="white">#FFFFFF</color>
+    <color name="back_default">#d9d9d9</color>
+    <color name="tv_title">#000000</color>
+    <color name="rule">#E5E5E5</color>
+    <color name="mine_number">#E03A32</color>
+    <color name="text_nomal">#6B6B6B</color>
+    <color name="title_index_bg">#FA2960</color>
+    <color name="edittext_text_color">#3D3D3D</color>
+    <color name="grey">#FFBEBEBE</color>
+    <color name="pager_indicator_color">#FA2960</color>
+    <color name="pager_text_selected_color">#FA2960</color>
+    <color name="pager_text_normal_color">#000000</color>
+    <color name="black">#000000</color>
+    <color name="dinein_title_selected">#D8465D</color>
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+    <color name="popup_main_background">#b0000000</color>
+    <color name="black87">#87000000</color>
+    <color name="black80">#80000000</color>
+    <color name="black70">#70000000</color>
+    <color name="black60">#60000000</color>
+    <color name="black50">#50000000</color>
+    <color name="black30">#30000000</color>
+    <color name="black10">#10000000</color>
+    <color name="background_nomal">#F5F5F5</color>
+    <color name="red_orderstate">#ED1C24</color>
+    <color name="gray_orderstate">#AAAAAA</color>
+    <color name="red">#ED1C24</color>
+    <color name="redFA2960">#FA2960</color>
+    <color name="merchange_picnum_bg">#DAD7D5</color>
+    <color name="cadetblue">#5F9EA0</color>
+    <color name="dishcate_text_selected">#FA2960</color>
+    <color name="dishcate_bg_unselected">#cbcbcb</color>
+    <color name="EEEEEE">#EEEEEE</color>
+    <color name="black333">#333333</color>
+    <color name="black666">#666666</color>
+    <color name="ptr_bg">#EEEEEE</color>
+    <color name="black_32">#323232</color>
+    <color name="cacaca">#CACACA</color>
+    <color name="cut_off_rule">#D4D4D4</color>
+</resources>
