@@ -1,6 +1,7 @@
-include ':pullToRefreshLibrary',':PullToReFreshSample',':PullToReFreshDemo'
+//include ':pullToRefreshLibrary', ':PullToReFreshSample', ':PullToReFreshDemo'
 //include ':QQShareDemo', ':qqsharesample'
 //include ':zxingsample'
 //include ':dialogwithlist'
 //include 'h5demo'
 //include ':ijkplayerLibrary', ':ijkplayer-example', ':ijkplayerdemo'
+include ':horizontalrecycleviewdemo'
