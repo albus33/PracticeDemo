@@ -14,7 +14,7 @@ gen/
 # android studio project
 build/
 .gradle/
-.idea/
+gradlew
 gradle/
 test/
 androidTest/

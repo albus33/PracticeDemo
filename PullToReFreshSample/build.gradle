@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "com.handmark.pulltorefresh.samples"
@@ -16,8 +16,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
             android.applicationVariants.all
                     { variant ->
-                        variant.outputs.each { output ->
-                            output.outputFile = new File(rootProject.ext.outputFilePath,
+                        variant.outputs.all { output -> output.outputFileName = new File(rootProject.ext.outputFilePath,
                                     project.archivesBaseName + "-" + project.versionName + ".apk");
                         }
                     }

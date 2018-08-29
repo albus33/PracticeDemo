@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         WebSettings webSettings = webview.getSettings();
         //设置为可调用js方法
         webSettings.setJavaScriptEnabled(true);
-        webview.addJavascriptInterface(new JsInteration(), "android");
+        webview.addJavascriptInterface(new JsInteration(), "name");
 
 
     }
@@ -59,8 +59,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public class JsInteration {
         @JavascriptInterface
         public String back() {
-            System.out.println("js触发了Android的方法");
-            return "MainActivity--js触发了Android的方法";
+            System.out.println("js触发了Android的方法back");
+            return "--js触发了Android的方法back";
         }
     }
 

@@ -1,0 +1,61 @@
+面试题：
+    面试题汇总  ：https://www.jianshu.com/p/b95789fd7fdd
+    1、问：  handler的运行机制。
+      答：http://www.jianshu.com/p/f4ca6c7918c5
+	2、问：http请求到的各种异常代码有哪些，分别是什么意思，客户端的异常代码是多少。
+	（，如404，403，501等等各是什么意思，）。
+	答：https://www.cnblogs.com/hjxcode/p/5663830.html
+	    http://blog.csdn.net/xiong9999/article/details/54138387
+
+	    Type	Reason-phrase	Note
+        1XX	Informational	信息性状态码，表示接受的请求正在处理
+        2XX	Success	成功状态码，表示请求正常处理完毕
+        3XX	Redirection	重定向状态码，表示需要客户端需要进行附加操作
+        4XX	Client Error	客户端错误状态码，表示服务器无法处理请求
+        5XX	Server Error	服务器错误状态码，表示服务器处理请求出错
+
+	3、说说分事件发机制和事件拦截机制。
+        答：http://www.jianshu.com/p/38015afcdb58
+
+	4、把一个10000*10000的图片放到100dp*100dp的imageView里面，要求显示全貌，不能有内存溢出，怎么处理。
+	    答：首先用IO将图片读写到SD卡上，然后使用BitmapFactory的decodeFile方法，将100dp的宽高转换成px，并将宽高传入options，然后将设定好的
+	    option和之前图片sd卡路径传入，可以得到压缩以后的bitmap片对象。然后将bitmap图片转换成需要的图片格式设置到iv中去。
+	    此方法既避免了图片裁剪导致无法显示全貌，又避免了bitmap过大导致的内存溢出。
+
+	5、hashMap的查询速度为什么会比较快。
+	6、服务在AIDL中，每个binder对象对应服务中的方法是并行还是队列执行，是否需要加锁。
+	7、广播中每次收到不同的广播，OnReceive方法是否运行在同一个实例。
+	8、一秒钟接收到一万条不同的推送，怎么更新界面和将消息存储到数据库。
+	9、用户出现ANR异常，并且忘记了复现方法，程序员如何精准定位导致ANR异常的代码。
+
+	10、gradView的item怎么消费事件，为什么gradView滑动的时候item又没有消费事件了。
+
+
+	11、屏幕卡顿的问题怎么处理。
+	答：使用DDMS中的SysTrace工具进行检测，把工具参数填好，选中需要检测的进程，运行工具，然后操作手机，直到出现卡顿的情况。等Systrace工具运行完毕，查看收集的信息，
+	查看超过17ms（手机默认fps是60帧，也就是每一帧大约17ms）的操作，再找到相关的代码进行优化处理。
+
+	12、把你擅长的领域讲一讲。
+	13、使用过那些线程相关的类库。
+	14、post请求在上传文件时，同时还要上传其它的参数，请问此时的body是什么样的。
+	15、在项目中你是怎样检测内存泄漏的。
+	   http://blog.csdn.net/niubitianping/article/details/72617864
+
+	16、View的绘制流程。
+	    http://www.jianshu.com/p/060b5f68da79
+
+	17、多线程
+	18、五大图片框架的优缺点(目前已是六大图片框架。)
+	http://blog.csdn.net/yingtian648/article/details/53502285
+
+	19、listView下拉刷新功能怎么实现。
+	20、云知声打分原理、
+	21、socket。
+	22、扫码提升灵敏度。
+	http://blog.csdn.net/cantus_hjk/article/details/50392028
+
+	23、Volley的原理优缺点和封装。
+	https://developer.android.com/training/volley/requestqueue.html
+
+	24、ListView和RecycleView的区别.
+

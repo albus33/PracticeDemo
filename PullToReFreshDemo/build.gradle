@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.example.administrator.pulltorefreshlistviewdemo"
         minSdkVersion 21
@@ -17,8 +17,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             android.applicationVariants.all
                     { variant ->
-                        variant.outputs.each { output ->
-                            output.outputFile = new File(rootProject.ext.outputFilePath,
+                        variant.outputs.all { output ->
+                            outputFileName = new File(rootProject.ext.outputFilePath,
                                     project.archivesBaseName + "-" + project.versionName + ".apk");
                         }
                     }

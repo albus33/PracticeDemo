@@ -81,6 +81,10 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 
 		mInnerLayout = (FrameLayout) findViewById(R.id.fl_inner);
 		mHeaderText = (TextView) mInnerLayout.findViewById(R.id.pull_to_refresh_text);
+		if(Mode.PULL_FROM_END==mode){
+			mHeaderText.setTextColor(getResources().getColor(R.color.black));
+			mHeaderText.setBackgroundColor(getResources().getColor(R.color.red));
+		}
 		mHeaderProgress = (ProgressBar) mInnerLayout.findViewById(R.id.pull_to_refresh_progress);
 		mSubHeaderText = (TextView) mInnerLayout.findViewById(R.id.pull_to_refresh_sub_text);
 		mHeaderImage = (ImageView) mInnerLayout.findViewById(R.id.pull_to_refresh_image);
